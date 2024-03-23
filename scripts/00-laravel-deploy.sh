@@ -11,4 +11,4 @@ php artisan route:cache
 echo "Running migrations..."
 php artisan migrate --force
 
-php artisan key:generate --show
+php artisan migrate
