@@ -30,12 +30,12 @@
   
         <div class="mb-3">
             <label for="inputApellido" class="form-label"><strong>Apellido:</strong></label>
-            <textarea 
+            <input 
                 class="form-control @error('apellido') is-invalid @enderror" 
-                style="height:150px" 
+                type="text"
                 name="apellido" 
                 id="inputApellido" 
-                placeholder="Apellido">{{ $persona->apellido }}</textarea>
+                placeholder="Apellido">{{ $persona->apellido }}</input>
             @error('apellido')
                 <div class="form-text text-danger">{{ $message }}</div>
             @enderror
@@ -43,12 +43,12 @@
 
         <div class="mb-3">
             <label for="inputTelefono" class="form-label"><strong>Telefono:</strong></label>
-            <textarea 
+            <input 
                 class="form-control @error('telefono') is-invalid @enderror" 
-                style="height:150px" 
+                type="text"
                 name="telefono" 
                 id="inputTelefono" 
-                placeholder="Telefono">{{ $persona->telefono }}</textarea>
+                placeholder="Telefono">{{ $persona->telefono }}</input>
             @error('telefono')
                 <div class="form-text text-danger">{{ $message }}</div>
             @enderror
